@@ -1,0 +1,32 @@
+@use '../Fonts' as font;
+.fon {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+
+    h1 {
+        position: absolute;
+        color: white;
+        font-size: 150px;
+        font-family: font.$font-display;
+        animation:fall 0.9s ease; 
+        
+    }
+    @keyframes fall{
+        0% {
+            transform: translateY(-300px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+    svg {
+        animation:fall 0.9s ease;
+        margin-top: 800px;
+        t

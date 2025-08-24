@@ -1,5 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import style from "../../Styles/MeetPage.module.scss"
+import { Link } from 'react-router-dom';
 
 function MeetPage() {
     const pageRefs = [
@@ -133,9 +134,15 @@ function MeetPage() {
                         Назад
                     </button>
                 )}
-                <button className={style.navButton} onClick={page === 4 ? handleSubmit : nextPage}>
-                    {page === 4 ? 'Завершить' : page === 0 ? 'Поехали' : 'Далее'}
-                </button>
+                {
+                    page === 4
+                        ? <Link to={'/main'}><button className={style.navButton} onClick={handleSubmit}>
+                            Завершить
+                        </button></Link>
+                        : <button className={style.navButton} onClick={nextPage}>
+                            Далее
+                        </button>
+                }
             </div>
 
             <div className={style.progress}>
