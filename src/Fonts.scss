@@ -1,0 +1,112 @@
+// Fonts.scss
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('./Fonts/amazonemberdisplay_bd.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('./Fonts/amazonemberdisplay_bdit.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('./Fonts/amazonemberdisplay_he.ttf') format('truetype');
+  font-weight: 800; // Heavy/ExtraBold
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('./Fonts/amazonemberdisplay_heit.ttf') format('truetype');
+  font-weight: 800; // Heavy/ExtraBold
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('./Fonts/amazonemberdisplay_lt.ttf') format('truetype');
+  font-weight: 300; // Light
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('./Fonts/amazonemberdisplay_litt.ttf') format('truetype');
+  font-weight: 300; // Light
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('./Fonts/amazonemberdisplay_md.ttf') format('truetype');
+  font-weight: 500; // Medium
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('./Fonts/amazonemberdisplay_mdit.ttf') format('truetype');
+  font-weight: 500; // Medium
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('./Fonts/amazonemberdisplay_rg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('./Fonts/amazonemberdisplay_rgit.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Modern';
+  src: url('./Fonts/amazonembermodern_bd.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Modern';
+  src: url('./Fonts/amazonembermodern_rg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Переменные для удобства использования
+$font-display: 'Amazon Ember Display', sans-serif !default;
+$font-modern: 'Amazon Ember Modern', sans-serif !default;
+
+// Миксины для быстрого применения шрифтов
+@mixin font-display($weight: normal, $style: normal) {
+  font-family: $font-display;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin font-modern($weight: normal) {
+  font-family: $font-modern;
+  font-weight: $weight;
+}
