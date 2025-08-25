@@ -17,8 +17,7 @@ useEffect(() => {
         setPreffect(false);
     }
     }, 300);
-    
-    // Очистка интервала при размонтировании компонента
+
     return () => clearInterval(interval);
 
 }, [preffect]);
